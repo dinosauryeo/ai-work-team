@@ -1,3 +1,8 @@
+---
+name: ai-work-team
+description: Route AI-assisted project work between discussion, planning, and strict execution modes while preserving handoffs and scope boundaries.
+---
+
 # AI Work Team Router
 
 Use this skill when the user invokes AI Work Team or asks to switch between its modes.
