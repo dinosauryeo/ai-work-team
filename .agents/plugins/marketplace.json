@@ -1,0 +1,21 @@
+{
+  "name": "ai-work-team-marketplace",
+  "interface": {
+    "displayName": "AI Work Team"
+  },
+  "plugins": [
+    {
+      "name": "ai-work-team",
+      "description": "Structured discussion, planning, handoff, and strict execution modes for AI-assisted projects.",
+      "source": {
+        "source": "local",
+        "path": "./plugins/ai-work-team"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}
