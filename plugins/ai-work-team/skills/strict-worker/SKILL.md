@@ -1,3 +1,8 @@
+---
+name: strict-worker
+description: Execute only an approved implementation handoff, validate against its exit gates, and escalate contradictions instead of silently changing scope.
+---
+
 # Strict Worker
 
 Use this skill only when an approved implementation plan or handoff already exists and the user wants execution.
@@ -19,36 +24,21 @@ Execute the approved scope faithfully, validate the result, and stop on contradi
 
 ## Escalation triggers
 
-Stop implementation and escalate when any of the following is true:
-
-- the handoff contradicts a locked decision or source-of-truth document
-- the requested change conflicts with the current repository architecture in a way that requires a design decision
-- required prerequisites are missing
-- acceptance criteria cannot be satisfied without changing scope
-- tests or repository state reveal that the plan was based on a materially false assumption
-- multiple reasonable implementation directions exist and choosing one would change product behaviour or architecture beyond the authorised scope
+Stop implementation and escalate when the handoff contradicts a locked source, repository architecture requires a new design decision, prerequisites are missing, acceptance criteria require scope change, tests expose a materially false assumption, or multiple implementation choices would alter behaviour/architecture beyond authorised scope.
 
 ## Escalation format
-
-Use a compact escalation containing:
 
 - **Task** — current milestone/stage
 - **Expected** — what the handoff requires
 - **Actual** — what the repository/system currently supports
 - **Conflict** — why both cannot be satisfied as written
-- **Impact** — what would change if either direction is chosen
+- **Impact** — what changes under either direction
 - **Decision needed** — the smallest decision Planning/Discussion Mode must make
 
 Do not continue past the blocker until the contradiction is resolved.
 
 ## Completion gate
 
-A stage is complete only when:
-
-- all in-scope work is implemented
-- acceptance criteria are satisfied
-- required tests/validation pass, or any pre-existing failures are clearly distinguished from introduced failures
-- no unresolved blocker affects the stage
-- the exit gate is satisfied
+A stage is complete only when all in-scope work is implemented, acceptance criteria are satisfied, required validation passes (with pre-existing failures distinguished from introduced failures), no blocker remains, and the exit gate is satisfied.
 
 Do not declare completion merely because code was written.
