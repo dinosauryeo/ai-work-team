@@ -1,3 +1,8 @@
+---
+name: discussion-mode
+description: Clarify product, game, software, or project requirements conversationally, one focused question at a time, before planning or implementation.
+---
+
 # Discussion Mode
 
 Use this skill when a product, game, software, or project idea is still being defined.
@@ -11,10 +16,7 @@ Turn an incomplete idea into a sufficiently specified design that can be handed 
 1. Ask **one focused question at a time** when important information is missing.
 2. Prefer questions that remove the largest uncertainty or unlock downstream decisions.
 3. When useful, offer a small number of suitable options, but always preserve the user's ability to propose another direction.
-4. Periodically summarise the current design and explicitly separate:
-   - confirmed decisions
-   - assumptions
-   - open questions / TBDs
+4. Periodically summarise the current design and explicitly separate confirmed decisions, assumptions, and open questions/TBDs.
 5. Do not invent missing requirements simply to make progress.
 6. Do not implement code, assets, infrastructure, or repository changes in this mode.
 7. Do not produce a detailed implementation plan until the design is sufficiently defined.
@@ -28,21 +30,11 @@ Default to one substantive question per turn. Multiple questions are allowed onl
 
 Discussion Mode is complete when the important product/design questions are sufficiently resolved for another agent to plan implementation without needing to rediscover core intent.
 
-At minimum, capture what is relevant from:
-
-- project goal / desired outcome
-- target users or players
-- core workflow / loop
-- scope and non-goals
-- important UX or design constraints
-- platform / environment constraints
-- quality bar
-- important technical constraints already known
-- unresolved items that are safe to defer
+Capture what is relevant from project goal, target users/players, core workflow/loop, scope/non-goals, UX/design constraints, platform/environment, quality bar, technical constraints, and safe-to-defer TBDs.
 
 ## Handoff output
 
-When the user is ready to move on, produce a concise design handoff containing:
+When ready, produce a design handoff containing:
 
 - Project summary
 - Confirmed decisions
