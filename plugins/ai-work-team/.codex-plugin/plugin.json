@@ -1,11 +1,29 @@
 {
-  "name": "AI Work Team",
-  "description": "A structured multi-mode workflow for discussion, planning, handoff, and strict execution.",
+  "name": "ai-work-team",
   "version": "0.1.0",
-  "skills": [
-    "../skills/ai-work-team",
-    "../skills/discussion-mode",
-    "../skills/planning-mode",
-    "../skills/strict-worker"
-  ]
+  "description": "A structured multi-mode workflow for discussion, planning, handoff, and strict execution.",
+  "author": {
+    "name": "dinosauryeo",
+    "url": "https://github.com/dinosauryeo"
+  },
+  "homepage": "https://github.com/dinosauryeo/ai-work-team",
+  "repository": "https://github.com/dinosauryeo/ai-work-team",
+  "license": "MIT",
+  "keywords": ["planning", "handoff", "workflow", "execution", "project-management"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "AI Work Team",
+    "shortDescription": "Separate discussion, planning, handoff, and strict execution",
+    "longDescription": "Use distinct project modes to clarify requirements, build implementation-ready handoffs, and execute approved scope without silent design drift.",
+    "developerName": "dinosauryeo",
+    "category": "Developer Tools",
+    "capabilities": ["Interactive", "Read", "Write"],
+    "websiteURL": "https://github.com/dinosauryeo/ai-work-team",
+    "defaultPrompt": [
+      "Start AI Work Team in discussion mode.",
+      "Use planning mode to prepare implementation handoffs.",
+      "Use strict worker mode to execute the approved handoff."
+    ],
+    "screenshots": []
+  }
 }
