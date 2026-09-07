@@ -1,0 +1,11 @@
+{
+  "name": "AI Work Team",
+  "description": "A structured multi-mode workflow for discussion, planning, handoff, and strict execution.",
+  "version": "0.1.0",
+  "skills": [
+    "../skills/ai-work-team",
+    "../skills/discussion-mode",
+    "../skills/planning-mode",
+    "../skills/strict-worker"
+  ]
+}
